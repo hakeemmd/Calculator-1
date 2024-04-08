@@ -7,6 +7,6 @@ spec:
     app: tomcat       # Label selector to match pods with label "app: nginx"
   ports:
     - protocol: TCP
-      port: 8080     # Port on which the service will listen
-      targetPort: 8080 # Port on which the pods are listening
+      port: 8081     # Port on which the service will listen
+      targetPort: 8081 # Port on which the pods are listening
   type: LoadBalancer # Type of service - LoadBalancer
