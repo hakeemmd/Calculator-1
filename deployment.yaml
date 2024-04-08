@@ -16,4 +16,4 @@ spec:
       - name: tomcat
         image: tomcat:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
