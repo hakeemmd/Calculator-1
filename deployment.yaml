@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Appache Tomcat
-  labels:
-    app: Appache Tomcat
+  name: tomcat-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: Appache Tomcat
+      app: tomcat
   template:
     metadata:
       labels:
-        app: Appache Tomcat
+        app: tomcat
     spec:
       containers:
-      - name: Appache Tomcat
-        image: Appache Tomcat:latest
+      - name: tomcat
+        image: tomcat:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
